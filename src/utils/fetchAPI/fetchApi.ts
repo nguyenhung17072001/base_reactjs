@@ -74,8 +74,8 @@ export default class ConfigureAxios {
       const refreshToken = this.setRefreshToken();
       const accessToken = this.setAccessToken();
       const res = await this.axiosInstance.post(url, axiosData(refreshToken, accessToken));
-      success(res, error.config);
-      return await this.axiosInstance.request(error.config);
+      success(res, error.request);
+      return await this.axiosInstance.request(error.request);
     } catch (err) {
       failure(error);
       return await Promise.reject(error);

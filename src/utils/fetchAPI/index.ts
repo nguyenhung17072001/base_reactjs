@@ -7,7 +7,7 @@ const axiosConfig = new ConfigureAxios({
     method: 'GET',
     baseURL: process.env.REACT_APP_URL,
     timeout: 10000,
-    paramsSerializer: qs.stringify,
+    //paramsSerializer: qs.stringify,
   },
   setAccessToken() {
     return store.getState().auth.token ?? '';

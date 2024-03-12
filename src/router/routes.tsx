@@ -33,10 +33,7 @@ export const routers = createBrowserRouter([
             <Dashboard />
           </Authenticated>
         ),
-        loader: () => {
-          NProgress.start();
-          NProgress.set(0.3);
-        },
+        
       },
       {
         path: 'users',
@@ -45,10 +42,7 @@ export const routers = createBrowserRouter([
             <Users />
           </Authenticated>
         ),
-        loader: () => {
-          NProgress.start();
-          NProgress.set(0.3);
-        },
+        
       },
       {
         path: 'roles',
@@ -57,10 +51,7 @@ export const routers = createBrowserRouter([
             <Roles />
           </Authenticated>
         ),
-        loader: () => {
-          NProgress.start();
-          NProgress.set(0.3);
-        },
+        
       },
     ],
   },

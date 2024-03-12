@@ -20,7 +20,7 @@ function Layout() {
 
   return (
     <Box display="flex" width="100%">
-      <Header open={open} onOpenDrawer={() => setOpen(true)} />
+      <Header/>
       <SideBar open={open} onClose={() => setOpen(false)} />
       <Box component="main" sx={{ width: '100%', flexGrow: 1, p: { xs: 2, sm: 3 } }}>
         <Toolbar />
