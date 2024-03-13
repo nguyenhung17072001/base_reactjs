@@ -16,34 +16,14 @@ interface Values {
 }
 
 export default function Login() {
-  const auth = useSelector(authSelector);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+  
 
-  const {
-    control,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<Values>({
-    defaultValues: {
-      username: 'SUPER_ADMIN',
-      password: 'Admin@123',
-    },
-    mode: 'onSubmit',
-  });
-
-  const onSubmit = (values: Values) => {
-    dispatch(
-      loginRequest({
-        username: values.username,
-        password: values.password,
-      }),
-    );
-  };
+  
+  
 
   return (
     <Box display="flex">
-      
+    Login Page
     </Box>
   );
 }

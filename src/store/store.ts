@@ -1,4 +1,4 @@
-import { Middleware } from 'redux';
+import { Middleware, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 import { configureStore, combineReducers, Tuple } from '@reduxjs/toolkit';
@@ -29,8 +29,10 @@ if (isDev) {
 
 const store = configureStore({
   reducer: reducers,
-
-  middleware: middlewares,
+  middleware: (getDefaultMiddleware) =>
+  getDefaultMiddleware({
+    thunk: false,
+  }).concat(middlewares),
 });
 sagaMiddleware.run(rootSaga);
 
