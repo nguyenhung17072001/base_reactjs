@@ -23,7 +23,7 @@ export default function Login() {
 
   return (
     <Box display="flex">
-    Login Page
+      Login Page
     </Box>
   );
 }
