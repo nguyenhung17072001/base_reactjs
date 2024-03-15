@@ -11,7 +11,7 @@ import NProgress from 'nprogress';
 import Roles from 'pages/authen/Roles/Roles';
 
 export const routers = createBrowserRouter([
-  {
+  /* {
     element: <AuthLayout />,
     children: [
       {
@@ -21,17 +21,20 @@ export const routers = createBrowserRouter([
       },
       { path: 'register', element: <Register /> },
     ],
-  },
+  }, */
   {
     path: '/',
     element: <Layout />,
     children: [
       {
         path: '',
-        element: (
+        /* element: (
           <Authenticated>
             <Dashboard />
           </Authenticated>
+        ), */
+        element: (
+            <Dashboard />
         ),
         
       },
@@ -42,6 +45,7 @@ export const routers = createBrowserRouter([
             <Users />
           </Authenticated>
         ),
+        
         
       },
       {

@@ -8,11 +8,7 @@ import { persistor, store } from 'store/store';
 import { PersistGate } from 'redux-persist/integration/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-/* root.render(
-  
-  <App />
-    
-); */
+
 root.render(
   <Provider store={store}>
     <PersistGate persistor={persistor} loading={null}>

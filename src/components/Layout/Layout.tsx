@@ -21,7 +21,7 @@ function Layout() {
   return (
     <Box display="flex" width="100%">
       <Header/>
-      <SideBar open={open} onClose={() => setOpen(false)} />
+      {/* <SideBar open={open} onClose={() => setOpen(false)} /> */}
       <Box component="main" sx={{ width: '100%', flexGrow: 1, p: { xs: 2, sm: 3 } }}>
         <Toolbar />
         {/* <Breadcrumbs navigation={navigation} title titleBottom card={false} divider={false} /> */}
