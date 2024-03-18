@@ -1,8 +1,4 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Dashboard from 'pages/authen/Dashboard/Dashboard';
-import Login from 'pages/un-authen/Login/Login';
-import Register from 'pages/un-authen/Register/Register';
-import AuthLayout from 'components/AuthLayout/AuthLayout';
 import NotFound from 'pages/NotFound/NotFound';
 import Layout from 'components/Layout/Layout';
 import Users from 'pages/authen/Users/Users';

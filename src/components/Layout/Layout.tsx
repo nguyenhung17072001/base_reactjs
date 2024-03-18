@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import NProgress from 'nprogress';
 import { Box, Toolbar } from '@mui/material';
-import SideBar from 'components/SideBar/SideBar';
 import Header from 'components/Header/Header';
 import Footer from 'components/Footer';
 
