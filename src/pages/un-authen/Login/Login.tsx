@@ -16,10 +16,6 @@ interface Values {
 }
 
 export default function Login() {
-  
-
-  
-  
 
   return (
     <Box display="flex">

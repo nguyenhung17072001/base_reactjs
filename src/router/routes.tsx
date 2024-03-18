@@ -9,6 +9,7 @@ import Users from 'pages/authen/Users/Users';
 import Authenticated from 'context/Authenticated';
 import NProgress from 'nprogress';
 import Roles from 'pages/authen/Roles/Roles';
+import Home from 'pages/Home';
 
 export const routers = createBrowserRouter([
   /* {
@@ -28,23 +29,20 @@ export const routers = createBrowserRouter([
     children: [
       {
         path: '',
-        /* element: (
-          <Authenticated>
-            <Dashboard />
-          </Authenticated>
-        ), */
         element: (
-            <Dashboard />
+          <Home />
         ),
-        
       },
       {
         path: 'users',
         element: (
+          <Users />
+        ),
+        /* element: (
           <Authenticated>
             <Users />
           </Authenticated>
-        ),
+        ), */
         
         
       },

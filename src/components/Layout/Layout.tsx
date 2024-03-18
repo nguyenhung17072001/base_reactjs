@@ -4,6 +4,7 @@ import NProgress from 'nprogress';
 import { Box, Toolbar } from '@mui/material';
 import SideBar from 'components/SideBar/SideBar';
 import Header from 'components/Header/Header';
+import Footer from 'components/Footer';
 
 function Layout() {
   const [open, setOpen] = useState(true);
@@ -19,14 +20,13 @@ function Layout() {
   }, []);
 
   return (
-    <Box display="flex" width="100%">
+    <Box width="100%">
       <Header/>
-      {/* <SideBar open={open} onClose={() => setOpen(false)} /> */}
-      <Box component="main" sx={{ width: '100%', flexGrow: 1, p: { xs: 2, sm: 3 } }}>
-        <Toolbar />
-        {/* <Breadcrumbs navigation={navigation} title titleBottom card={false} divider={false} /> */}
+      <Box component="main" sx={{ width: '100%', }}>
+        {/* <Toolbar /> */}
         <Outlet />
       </Box>
+      <Footer />
     </Box>
   );
 }
